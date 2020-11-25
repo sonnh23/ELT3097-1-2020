@@ -29,7 +29,6 @@ public class ListQuestionAdapter extends ArrayAdapter<Question> {
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.item_question, parent, false);
         }
-
         TextView tvItemQuesNum = convertView.findViewById(R.id.tvItemQuesNum);
         TextView tvItemQuesChoice = convertView.findViewById(R.id.tvItemQuesChoice);
         TextView tvItemQuesTrue = convertView.findViewById(R.id.tvItemQuesTrue);
@@ -37,10 +36,8 @@ public class ListQuestionAdapter extends ArrayAdapter<Question> {
         final Question question = getItem(position);
 
         if (question != null) {
-
             tvItemQuesNum.setText(String.valueOf(position+1));
             tvItemQuesChoice.setText(Common.getChoiceText(question.mChoice));
-
             if (QuizActivity.checkResult){
                 tvItemQuesTrue.setVisibility(View.VISIBLE);
                 tvItemQuesTrue.setText(Common.getChoiceText(question.mAnsTrue));
