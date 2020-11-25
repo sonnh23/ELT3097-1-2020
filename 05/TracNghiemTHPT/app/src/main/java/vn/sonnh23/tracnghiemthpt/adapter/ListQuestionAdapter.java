@@ -52,3 +52,4 @@ public class ListQuestionAdapter extends ArrayAdapter<Question> {
         return convertView;
     }
 }
+
