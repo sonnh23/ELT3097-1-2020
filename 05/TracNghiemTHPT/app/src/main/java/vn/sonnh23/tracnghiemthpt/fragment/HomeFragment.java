@@ -42,7 +42,7 @@ public class HomeFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         long currentTime = System.currentTimeMillis();
-        long timeInMillis = Common.timeToUnix(1620000002);
+        long timeInMillis = Common.timeToUnix(1624470022); //ngay thi du kien: 23/6/2021
 
         if (getActivity() != null) {
             CountdownView countdownView = getActivity().findViewById(R.id.countdownView);
