@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:text="Đăng nhập"
+        android:textColor="#2CA7E0"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edit_username"
+        android:drawablePadding="10dp"
+        android:hint="Tên đăng nhập hoặc email"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColorHint="#888888" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/edit_password"
+        android:drawablePadding="10dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColorHint="#888888" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:textSize="25dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="#fff" />
+    <Button
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/button_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="QUÊN MẬT KHẨU"
+        android:textColor="#2CA7E0"
+        android:textSize="20dp" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/button_facebook"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="208dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="82dp"
+                android:height="60dp"
+                android:background="@drawable/button_social"
+                android:drawableLeft="@drawable/facebook"
+                android:drawablePadding="12dp"
+                android:gravity="left|center"
+                android:padding="15dp"
+                android:text="FACEBOOK"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_google"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_google"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="208dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="82dp"
+                android:height="60dp"
+                android:background="@drawable/button_social"
+                android:drawableLeft="@drawable/google"
+                android:drawablePadding="15dp"
+                android:gravity="left|center"
+                android:padding="15dp"
+                android:text="GOOGLE"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button_facebook"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
